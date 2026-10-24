@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Space Web | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar with Mobile Toggle Bar (<1024px) -->
+  <header class="navbar">
+    <div class="nav-container">
+      
+      <!-- Unique & Advanced Learn Space Web Logo -->
+      <a href="index.html" class="ls-brand-logo" aria-label="Learn Space Web Home">
+        <div class="ls-logo-emblem">
+          <svg class="ls-svg-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="20" cy="20" rx="17" ry="8" transform="rotate(-30 20 20)" stroke="url(#ls-cyan-grad)" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="4 3" />
+            <path d="M20 7L31 13.5V26.5L20 33L9 26.5V13.5L20 7Z" fill="url(#ls-indigo-grad)" />
+            <path d="M16.5 16.5L13 20L16.5 23.5M23.5 16.5L27 20L23.5 23.5M21 15L19 25" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="33" cy="12" r="3" fill="#10b981" />
+            <defs>
+              <linearGradient id="ls-indigo-grad" x1="9" y1="7" x2="31" y2="33" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#4f46e5" />
+                <stop offset="1" stop-color="#06b6d4" />
+              </linearGradient>
+              <linearGradient id="ls-cyan-grad" x1="3" y1="20" x2="37" y2="20" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#10b981" />
+                <stop offset="1" stop-color="#4f46e5" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="ls-logo-glow"></span>
+        </div>
+
+        <div class="ls-logo-text">
+          <span class="ls-title-main">Learn<span>Space</span></span>
+          <span class="ls-title-badge">WEB</span>
+        </div>
+      </a>
+
+      <!-- Pure CSS Mobile Toggle Checkbox & Hamburger Label -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="explore-courses.html">Explore Courses</a></li>
+          <li><a href="learning-paths.html">Learning Paths</a></li>
+        </ul>
+      </nav>
+
+      <!-- Advanced Get Started CTA Button -->
+      <div class="nav-actions">
+        <a href="get-started.html" class="ls-btn-get-started">
+          <span class="ls-btn-pulse"></span>
+          <span class="ls-btn-label">Get Start</span>
+          <span class="ls-btn-icon-box">
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- Section 1: Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-pill">Next-Gen Web Engineering Platform</span>
+          <h1>Launch Your Tech Career in <span>Learning Space</span></h1>
+          <p>
+            Master frontend architecture, relational & NoSQL databases, and cloud server engineering through interactive browser labs and guided career tracks.
+          </p>
+          <a href="popular-courses.html" class="btn-primary">Explore Courses Now</a>
+        </div>
+
+        <div class="hero-visual-grid">
+          <div class="hero-img-card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Frontend Development">
+            <div class="img-caption">Frontend UI Engineering</div>
+          </div>
+          <div class="hero-img-card">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Data Analytics">
+            <div class="img-caption">Data & SQL Architecture</div>
+          </div>
+          <div class="hero-img-card">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" alt="Server Infrastructure">
+            <div class="img-caption">Internet & Cloud Servers</div>
+          </div>
+          <div class="hero-img-card">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80" alt="Product Design">
+            <div class="img-caption">UX & Design Systems</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Search & Category Section -->
+    <section class="section-padding section-alt" id="search-categories">
+      <div class="container">
+        <div class="section-header">
+          <h2>Search & Explore Categories</h2>
+          <p>Filter our catalog with the 4 input cards or click a category chip to jump straight into a track.</p>
+        </div>
+
+        <form class="input-cards-grid" action="popular-courses.html" method="get">
+          <div class="input-card">
+            <label for="keyword">1. Course Keyword</label>
+            <input type="text" id="keyword" name="keyword" placeholder="e.g., CSS Grid, SQL, HTTP/3...">
+          </div>
+
+          <div class="input-card">
+            <label for="category-select">2. Category Track</label>
+            <select id="category-select" name="category">
+              <option value="all">All Categories</option>
+              <option value="development">Development</option>
+              <option value="data">Data</option>
+              <option value="business">Business</option>
+              <option value="design">Design</option>
+            </select>
+          </div>
+
+          <div class="input-card">
+            <label for="level-select">3. Skill Level</label>
+            <select id="level-select" name="level">
+              <option value="all">Any Experience Level</option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </div>
+
+          <div class="input-card">
+            <label for="duration-select">4. Course Duration</label>
+            <select id="duration-select" name="duration">
+              <option value="any">Any Duration</option>
+              <option value="short">Under 4 Weeks</option>
+              <option value="medium">4 – 8 Weeks</option>
+              <option value="long">8+ Weeks Deep Dive</option>
+            </select>
+          </div>
+        </form>
+
+        <div class="chips-wrapper">
+          <a href="popular-courses.html#development" class="chip active-chip">Development</a>
+          <a href="popular-courses.html#data" class="chip">Data</a>
+          <a href="popular-courses.html#business" class="chip">Business</a>
+          <a href="popular-courses.html#design" class="chip">Design</a>
+          <a href="learning-paths.html#frontend" class="chip">Frontend Path</a>
+          <a href="learning-paths.html#database" class="chip">Database Path</a>
+          <a href="learning-paths.html#server" class="chip">Internet & Server Path</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Popular Courses Section -->
+    <section class="section-padding" id="home-popular-courses">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Popular Courses</h2>
+          <p>Start with our top-rated courses featuring hands-on labs and direct curriculum access.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="course-card">
+            <div>
+              <div class="badge-row">
+                <span class="category-tag">Development</span>
+                <span class="meta-info">4.9 ★ Rating</span>
+              </div>
+              <h3>Responsive Web Design with CSS Grid & Flexbox</h3>
+              <p>Build fluid, modern responsive web interfaces using semantic HTML5, Flexbox, and CSS Grid architecture.</p>
+              <ul class="course-meta-list">
+                <li><strong>Duration:</strong> 6 Weeks</li>
+                <li><strong>Level:</strong> Beginner</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="https://web.dev/learn/css" target="_blank" rel="noopener noreferrer" class="btn-course-anchor">View Course &rarr;</a>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <div class="badge-row">
+                <span class="category-tag">Data</span>
+                <span class="meta-info">4.8 ★ Rating</span>
+              </div>
+              <h3>SQL & Relational Database Analytics</h3>
+              <p>Design normalized schemas, write high-speed analytical joins, and optimize production database queries.</p>
+              <ul class="course-meta-list">
+                <li><strong>Duration:</strong> 8 Weeks</li>
+                <li><strong>Level:</strong> Intermediate</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="https://cloud.google.com/learn/training" target="_blank" rel="noopener noreferrer" class="btn-course-anchor">View Course &rarr;</a>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <div class="badge-row">
+                <span class="category-tag">Design</span>
+                <span class="meta-info">4.9 ★ Rating</span>
+              </div>
+              <h3>Design Systems & Interactive UI Prototyping</h3>
+              <p>Create accessible color tokens, modular typography scales, and reusable UI component libraries.</p>
+              <ul class="course-meta-list">
+                <li><strong>Duration:</strong> 5 Weeks</li>
+                <li><strong>Level:</strong> Beginner</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="https://m3.material.io/" target="_blank" rel="noopener noreferrer" class="btn-course-anchor">View Course &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Why Learn Space & 5 Benefits -->
+    <section class="section-padding section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Learn Space?</h2>
+          <p>Five core advantages that help our students master full-stack web technologies faster.</p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon icon-indigo">01</div>
+            <h3>Project-Based Curriculum</h3>
+            <p>Build real-world web apps, database schemas, and REST APIs directly in your browser workspace.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon icon-emerald">02</div>
+            <h3>Industry-Vetted Mentors</h3>
+            <p>Learn best practices curated by senior engineers and cloud architects working in top tech teams.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon icon-amber">03</div>
+            <h3>Self-Paced Flexibility</h3>
+            <p>Learn on your schedule with bite-sized modules, offline reading modes, and milestone tracking.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon icon-rose">04</div>
+            <h3>Verified Certificates</h3>
+            <p>Earn shareable completion badges and portfolio credentials recognized by hiring managers.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon icon-indigo">05</div>
+            <h3>Interactive Code Labs</h3>
+            <p>Test queries, debug server packets, and style CSS grids inside instant zero-setup sandboxes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Customer Testimonials & Successful Runs -->
+    <section class="section-padding" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>Student Reviews & Successful Runs</h2>
+          <p>See how learners around the world rate our interactive courses and successfully run real-world deployments.</p>
+        </div>
+
+        <div class="success-banner">
+          <div class="success-stat">
+            <h3>99.4%</h3>
+            <p>Successful Lab Runs</p>
+          </div>
+          <div class="success-stat">
+            <h3>120,000+</h3>
+            <p>Projects Successfully Deployed</p>
+          </div>
+          <div class="success-stat">
+            <h3>4.9 / 5.0</h3>
+            <p>Average Student Rating</p>
+          </div>
+          <div class="success-stat">
+            <h3>50,000+</h3>
+            <p>Certified Graduates</p>
+          </div>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div>
+              <div class="rating-row">
+                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                <span class="verified-run">&#10003; 42 Labs Successfully Run</span>
+              </div>
+              <p class="review-quote" style="margin-top: 16px;">
+                "The Frontend Engineering Path completely transformed how I structure CSS Grid and Flexbox. Every browser code lab ran smoothly!"
+              </p>
+            </div>
+            <div class="reviewer-profile">
+              <div class="avatar-circle">AK</div>
+              <div class="reviewer-info">
+                <h4>Ananya Krishnan</h4>
+                <span>Frontend Developer • 5.0 ★ Rating</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div>
+              <div class="rating-row">
+                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                <span class="verified-run">&#10003; 38 Queries Successfully Run</span>
+              </div>
+              <p class="review-quote" style="margin-top: 16px;">
+                "The SQL and Database Systems track gave me the confidence to optimize slow production queries. I landed my Data Analyst role quickly."
+              </p>
+            </div>
+            <div class="reviewer-profile">
+              <div class="avatar-circle">RM</div>
+              <div class="reviewer-info">
+                <h4>Rohan Mehta</h4>
+                <span>Data Analyst • 5.0 ★ Rating</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div>
+              <div class="rating-row">
+                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                <span class="verified-run">&#10003; 30 Servers Successfully Run</span>
+              </div>
+              <p class="review-quote" style="margin-top: 16px;">
+                "Learning HTTP/3, DNS, and Linux server deployment through the Internet & Server path made cloud infrastructure click for me."
+              </p>
+            </div>
+            <div class="reviewer-profile">
+              <div class="avatar-circle">SL</div>
+              <div class="reviewer-info">
+                <h4>Sophia Lin</h4>
+                <span>Cloud Systems Engineer • 4.9 ★ Rating</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Dark Slate Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="ls-brand-logo" style="margin-bottom: 12px;">
+            <div class="ls-logo-emblem" style="width: 36px; height: 36px;">
+              <svg class="ls-svg-icon" viewBox="0 0 40 40" fill="none" style="width: 26px; height: 26px;">
+                <ellipse cx="20" cy="20" rx="17" ry="8" transform="rotate(-30 20 20)" stroke="#38bdf8" stroke-width="2.2" stroke-dasharray="4 3" />
+                <path d="M20 7L31 13.5V26.5L20 33L9 26.5V13.5L20 7Z" fill="#4f46e5" />
+                <path d="M16.5 16.5L13 20L16.5 23.5M23.5 16.5L27 20L23.5 23.5M21 15L19 25" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="ls-logo-text">
+              <span class="ls-title-main">Learn<span>Space</span></span>
+              <span class="ls-title-badge">WEB</span>
+            </div>
+          </a>
+          <p>An open, structured digital learning platform empowering developers, designers, and analysts worldwide.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="explore-courses.html">Explore Courses</a></li>
+            <li><a href="learning-paths.html">Learning Paths</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Core Tracks</h4>
+          <ul>
+            <li><a href="learning-paths.html#frontend">Frontend Web</a></li>
+            <li><a href="learning-paths.html#database">Database Systems</a></li>
+            <li><a href="learning-paths.html#server">Internet & Server</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="index.html#search-categories">Search & Categories</a></li>
+            <li><a href="index.html#testimonials">Student Reviews</a></li>
+            <li><a href="get-started.html">Student Enrollment</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Learning Space Web. Built with HTML5, CSS Grid & Flexbox.</span>
+        <span>Indigo & Emerald Modern EdTech UI</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

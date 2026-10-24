@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Space Web | Get Started & Enroll</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar with Mobile Toggle Bar (<1024px) -->
+  <header class="navbar">
+    <div class="nav-container">
+      
+      <!-- Unique & Advanced Learn Space Web Logo -->
+      <a href="index.html" class="ls-brand-logo" aria-label="Learn Space Web Home">
+        <div class="ls-logo-emblem">
+          <svg class="ls-svg-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="20" cy="20" rx="17" ry="8" transform="rotate(-30 20 20)" stroke="url(#ls-cyan-grad)" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="4 3" />
+            <path d="M20 7L31 13.5V26.5L20 33L9 26.5V13.5L20 7Z" fill="url(#ls-indigo-grad)" />
+            <path d="M16.5 16.5L13 20L16.5 23.5M23.5 16.5L27 20L23.5 23.5M21 15L19 25" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="33" cy="12" r="3" fill="#10b981" />
+            <defs>
+              <linearGradient id="ls-indigo-grad" x1="9" y1="7" x2="31" y2="33" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#4f46e5" />
+                <stop offset="1" stop-color="#06b6d4" />
+              </linearGradient>
+              <linearGradient id="ls-cyan-grad" x1="3" y1="20" x2="37" y2="20" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#10b981" />
+                <stop offset="1" stop-color="#4f46e5" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="ls-logo-glow"></span>
+        </div>
+
+        <div class="ls-logo-text">
+          <span class="ls-title-main">Learn<span>Space</span></span>
+          <span class="ls-title-badge">WEB</span>
+        </div>
+      </a>
+
+      <!-- Pure CSS Mobile Toggle Checkbox & Hamburger Label -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="explore-courses.html">Explore Courses</a></li>
+          <li><a href="learning-paths.html">Learning Paths</a></li>
+        </ul>
+      </nav>
+
+      <!-- Advanced Get Started CTA Button -->
+      <div class="nav-actions">
+        <a href="get-started.html" class="ls-btn-get-started">
+          <span class="ls-btn-pulse"></span>
+          <span class="ls-btn-label">Get Started</span>
+          <span class="ls-btn-icon-box">
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2>Create Your Learning Space Account</h2>
+          <p>Enroll in seconds to unlock interactive browser code labs, guided learning paths, and verified completion certificates.</p>
+        </div>
+
+        <div class="enrollment-grid">
+          <aside class="enrollment-info-card">
+            <div>
+              <span class="hero-pill" style="background: rgba(16, 185, 129, 0.2); color: #34d399;">Free Starter Access</span>
+              <h2>Everything You Need to Master the Web</h2>
+              <p style="margin-top: 10px;">
+                Join over 50,000 students running real HTML5, CSS Grid, SQL, and Linux cloud server labs directly in the browser.
+              </p>
+            </div>
+
+            <ul class="perks-list">
+              <li>
+                <span class="perk-check">&#10003;</span>
+                <div>
+                  <strong>Instant Browser Sandboxes:</strong> Zero local installation required—write and run code immediately.
+                </div>
+              </li>
+              <li>
+                <span class="perk-check">&#10003;</span>
+                <div>
+                  <strong>All 3 Flagship Learning Paths:</strong> Full access to Frontend, Database Systems, and Internet & Server tracks.
+                </div>
+              </li>
+              <li>
+                <span class="perk-check">&#10003;</span>
+                <div>
+                  <strong>99.4% Successful Lab Execution:</strong> Step-by-step automated hints ensure you never get stuck.
+                </div>
+              </li>
+            </ul>
+
+            <div class="enrollment-quote-box">
+              <p>"Enrolling in the Frontend and Database paths took me from beginner HTML to building full-stack dashboards in 8 weeks."</p>
+              <span>&#9733;&#9733;&#9733;&#9733;&#9733; — Verified Student Graduate</span>
+            </div>
+          </aside>
+
+          <div class="enrollment-form-card">
+            <h3>Student Enrollment Form</h3>
+            <p style="color: var(--slate-500); font-size: 0.95rem; margin-bottom: 28px;">Fill out your profile below to launch your personalized dashboard.</p>
+
+            <form action="popular-courses.html" method="get">
+              <div class="form-grid-row">
+                <div class="form-group">
+                  <label for="full-name">Full Name</label>
+                  <input type="text" id="full-name" name="name" placeholder="e.g., Arjun Sharma" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-grid-row">
+                <div class="form-group">
+                  <label for="password">Create Password</label>
+                  <input type="password" id="password" name="password" placeholder="Minimum 8 characters" required>
+                </div>
+                <div class="form-group">
+                  <label for="experience">Current Skill Level</label>
+                  <select id="experience" name="level" required>
+                    <option value="beginner">Beginner (New to Web Tech)</option>
+                    <option value="intermediate">Intermediate (Some Coding Experience)</option>
+                    <option value="advanced">Advanced (Looking to Specialize)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="category-interest">Primary Category Interest</label>
+                <select id="category-interest" name="category" required>
+                  <option value="development">Development (HTML, CSS Grid, JS, Backend)</option>
+                  <option value="data">Data (SQL, PostgreSQL, NoSQL Analytics)</option>
+                  <option value="design">Design (UI/UX, Material Design Systems)</option>
+                  <option value="business">Business (Digital Product & Agile Management)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Select Your Starting Learning Path</label>
+                <div class="path-options-grid">
+                  <label class="path-radio-card">
+                    <input type="radio" name="learning_path" value="frontend" checked>
+                    <span class="path-radio-content">
+                      <strong>Frontend</strong>
+                      <span>HTML, CSS Grid & UI</span>
+                    </span>
+                  </label>
+
+                  <label class="path-radio-card">
+                    <input type="radio" name="learning_path" value="database">
+                    <span class="path-radio-content">
+                      <strong>Database</strong>
+                      <span>SQL & Data Modeling</span>
+                    </span>
+                  </label>
+
+                  <label class="path-radio-card">
+                    <input type="radio" name="learning_path" value="server">
+                    <span class="path-radio-content">
+                      <strong>Internet & Server</strong>
+                      <span>HTTP/3, DNS & Cloud</span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+
+              <label class="checkbox-row">
+                <input type="checkbox" name="terms" required>
+                <span>I agree to the Learning Space Web Terms of Service and Student Honor Code.</span>
+              </label>
+
+              <button type="submit" class="btn-submit-enroll">Complete Enrollment & Start Learning &rarr;</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Dark Slate Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="ls-brand-logo" style="margin-bottom: 12px;">
+            <div class="ls-logo-emblem" style="width: 36px; height: 36px;">
+              <svg class="ls-svg-icon" viewBox="0 0 40 40" fill="none" style="width: 26px; height: 26px;">
+                <ellipse cx="20" cy="20" rx="17" ry="8" transform="rotate(-30 20 20)" stroke="#38bdf8" stroke-width="2.2" stroke-dasharray="4 3" />
+                <path d="M20 7L31 13.5V26.5L20 33L9 26.5V13.5L20 7Z" fill="#4f46e5" />
+                <path d="M16.5 16.5L13 20L16.5 23.5M23.5 16.5L27 20L23.5 23.5M21 15L19 25" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="ls-logo-text">
+              <span class="ls-title-main">Learn<span>Space</span></span>
+              <span class="ls-title-badge">WEB</span>
+            </div>
+          </a>
+          <p>An open, structured digital learning platform empowering developers, designers, and analysts worldwide.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="explore-courses.html">Explore Courses</a></li>
+            <li><a href="learning-paths.html">Learning Paths</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Core Tracks</h4>
+          <ul>
+            <li><a href="learning-paths.html#frontend">Frontend Web</a></li>
+            <li><a href="learning-paths.html#database">Database Systems</a></li>
+            <li><a href="learning-paths.html#server">Internet & Server</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="index.html#search-categories">Search & Categories</a></li>
+            <li><a href="index.html#testimonials">Student Reviews</a></li>
+            <li><a href="get-started.html">Student Enrollment</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Learning Space Web. Built with HTML5, CSS Grid & Flexbox.</span>
+        <span>Indigo & Emerald Modern EdTech UI</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

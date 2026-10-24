@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Space Web | Learning Paths</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar with Mobile Toggle Bar (<1024px) -->
+  <header class="navbar">
+    <div class="nav-container">
+      
+      <!-- Unique & Advanced Learn Space Web Logo -->
+      <a href="index.html" class="ls-brand-logo" aria-label="Learn Space Web Home">
+        <div class="ls-logo-emblem">
+          <svg class="ls-svg-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="20" cy="20" rx="17" ry="8" transform="rotate(-30 20 20)" stroke="url(#ls-cyan-grad)" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="4 3" />
+            <path d="M20 7L31 13.5V26.5L20 33L9 26.5V13.5L20 7Z" fill="url(#ls-indigo-grad)" />
+            <path d="M16.5 16.5L13 20L16.5 23.5M23.5 16.5L27 20L23.5 23.5M21 15L19 25" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="33" cy="12" r="3" fill="#10b981" />
+            <defs>
+              <linearGradient id="ls-indigo-grad" x1="9" y1="7" x2="31" y2="33" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#4f46e5" />
+                <stop offset="1" stop-color="#06b6d4" />
+              </linearGradient>
+              <linearGradient id="ls-cyan-grad" x1="3" y1="20" x2="37" y2="20" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#10b981" />
+                <stop offset="1" stop-color="#4f46e5" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="ls-logo-glow"></span>
+        </div>
+
+        <div class="ls-logo-text">
+          <span class="ls-title-main">Learn<span>Space</span></span>
+          <span class="ls-title-badge">WEB</span>
+        </div>
+      </a>
+
+      <!-- Pure CSS Mobile Toggle Checkbox & Hamburger Label -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="popular-courses.html">Popular Courses</a></li>
+          <li><a href="learning-paths.html" class="active">Learning Paths</a></li>
+        </ul>
+      </nav>
+
+      <!-- Advanced Get Started CTA Button -->
+      <div class="nav-actions">
+        <a href="get-started.html" class="ls-btn-get-started">
+          <span class="ls-btn-pulse"></span>
+          <span class="ls-btn-label">Get Start</span>
+          <span class="ls-btn-icon-box">
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2>Core Learning Paths</h2>
+          <p>Follow our three flagship guided tracks—Frontend, Database, and Internet & Server—to master full-stack web architecture step by step.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="course-card" id="frontend">
+            <div>
+              <div class="badge-row">
+                <span class="category-tag">Path 01 • Development & Design</span>
+                <span class="meta-info">5 Courses</span>
+              </div>
+              <h3>Frontend Engineering Path</h3>
+              <p>
+                Master semantic HTML5, responsive CSS Grid & Flexbox layouts, accessibility standards (WCAG), and modern UI component architecture.
+              </p>
+              <ul class="course-meta-list">
+                <li><strong>Duration:</strong> 10 Weeks</li>
+                <li><strong>Level:</strong> Beginner to Pro</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer" target="_blank" rel="noopener noreferrer" class="btn-course-anchor">View Course Path &rarr;</a>
+            </div>
+          </article>
+
+          <article class="course-card" id="database">
+            <div>
+              <div class="badge-row">
+                <span class="category-tag">Path 02 • Data Architecture</span>
+                <span class="meta-info">4 Courses</span>
+              </div>
+              <h3>Database Systems Path</h3>
+              <p>
+                Learn relational data modeling, PostgreSQL indexing, ACID transactions, query performance tuning, and distributed NoSQL storage.
+              </p>
+              <ul class="course-meta-list">
+                <li><strong>Duration:</strong> 12 Weeks</li>
+                <li><strong>Level:</strong> Intermediate</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="https://cloud.google.com/learn/training" target="_blank" rel="noopener noreferrer" class="btn-course-anchor">View Course Path &rarr;</a>
+            </div>
+          </article>
+
+          <article class="course-card" id="server">
+            <div>
+              <div class="badge-row">
+                <span class="category-tag">Path 03 • Cloud & Networking</span>
+                <span class="meta-info">4 Courses</span>
+              </div>
+              <h3>Internet and Server Path</h3>
+              <p>
+                Explore how the web works under the hood: TCP/IP networking, DNS resolution, HTTP/3 protocols, Linux server deployment, and cloud load balancing.
+              </p>
+              <ul class="course-meta-list">
+                <li><strong>Duration:</strong> 10 Weeks</li>
+                <li><strong>Level:</strong> Intermediate to Advanced</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work" target="_blank" rel="noopener noreferrer" class="btn-course-anchor">View Course Path &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Dark Slate Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="ls-brand-logo" style="margin-bottom: 12px;">
+            <div class="ls-logo-emblem" style="width: 36px; height: 36px;">
+              <svg class="ls-svg-icon" viewBox="0 0 40 40" fill="none" style="width: 26px; height: 26px;">
+                <ellipse cx="20" cy="20" rx="17" ry="8" transform="rotate(-30 20 20)" stroke="#38bdf8" stroke-width="2.2" stroke-dasharray="4 3" />
+                <path d="M20 7L31 13.5V26.5L20 33L9 26.5V13.5L20 7Z" fill="#4f46e5" />
+                <path d="M16.5 16.5L13 20L16.5 23.5M23.5 16.5L27 20L23.5 23.5M21 15L19 25" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="ls-logo-text">
+              <span class="ls-title-main">Learn<span>Space</span></span>
+              <span class="ls-title-badge">WEB</span>
+            </div>
+          </a>
+          <p>An open, structured digital learning platform empowering developers, designers, and analysts worldwide.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="explore-courses.html">Explore Courses</a></li>
+            <li><a href="learning-paths.html">Learning Paths</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Core Tracks</h4>
+          <ul>
+            <li><a href="learning-paths.html#frontend">Frontend Web</a></li>
+            <li><a href="learning-paths.html#database">Database Systems</a></li>
+            <li><a href="learning-paths.html#server">Internet & Server</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="index.html#search-categories">Search & Categories</a></li>
+            <li><a href="index.html#testimonials">Student Reviews</a></li>
+            <li><a href="about.html">Our Mission</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Learning Space Web. Built with HTML5, CSS Grid & Flexbox.</span>
+        <span>Indigo & Emerald Modern EdTech UI</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
