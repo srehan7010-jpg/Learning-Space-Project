@@ -90,7 +90,8 @@ main {
 .nav-toggle-label {
   display: none;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5px;
   width: 28px;
   height: 20px;
   cursor: pointer;
